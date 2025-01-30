@@ -7,6 +7,7 @@ class Cell {
         // Age?
         // Generation?
         // Current Neighbours?
+        int neighbours;
 
     public:
         // Constructor Declaration
@@ -15,8 +16,11 @@ class Cell {
 
         // Method Declaration
         void setAlive(bool newState);
-        bool getAlive();
+        bool isAlive();
         void switchAlive();
+
+        int getNeighbours();
+        void setNeighbours(int n);
 };
 
 #endif
